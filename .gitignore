@@ -1,0 +1,6 @@
+.molecule
+.vagrant
+.cache
+tests/.cache
+*.pyc
+*.retry
