@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Taylor Nation
+  description: An Ansible role for installing AWS Elastic Networking Adapter drivers.
+  company: Azavea, Inc.
+  license: Apache
+  min_ansible_version: 2.2
+  platforms:
+    - name: Ubuntu
+      versions:
+      - trusty
+  galaxy_tags:
+    - development
+dependencies:
+  - azavea.git
+  - azavea.build-essential
