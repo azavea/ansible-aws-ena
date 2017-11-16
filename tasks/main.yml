@@ -1,6 +1,6 @@
 ---
 - name: Check driver installation status
-  shell: modinfo ena | grep -i "^version:" | grep -Po "(?:(\d+)\.)?(?:(\d+)\.)?(\*|\d+)$"
+  shell: modinfo ena | grep -i "^version:" | grep -Po "(?:(\d+)\.)?(?:(\d+)\.)?(\*|\d+)"
   register: ena_driver_version
   changed_when: ena_driver_version.stdout != "{{ aws_ena_driver_version }}"
   ignore_errors: True
