@@ -37,10 +37,11 @@ Further information is available in the AWS ENA [documentation](http://docs.aws.
 ## Testing
 Tests are done using [molecule](http://molecule.readthedocs.io/). To run the test suite, install molecule and its dependencies and run ` molecule test` from the folder containing molecule.yml. To add additional tests, add a [testinfra](http://testinfra.readthedocs.org/) python script in the [tests](./tests/) directory, or add a function to [test_ena.py](./tests/test_ena.py). Information about available Testinfra modules is available [here](http://testinfra.readthedocs.io/en/latest/modules.html).
 
-### Example 
+### Example
+
 ```
-# Download molecule, dependencies
-$ pip install molecule
+# Download Molecule and its dependencies
+$ pip install -r requirements.txt
 
 # Change to the top-level project directory, which contains molecule.yml
 $ cd /path/to/ansible-aws-ena
